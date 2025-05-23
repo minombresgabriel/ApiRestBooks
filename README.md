@@ -27,24 +27,6 @@ API RESTful para la gestión de libros con autenticación mediante JWT, roles de
 
 ---
 
-## 📁 Estructura del proyecto
-books-api/
-├── config/
-│ └── db.js
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── docs/
-│ └── swagger.yaml
-├── tests/
-│ └── userRoutes.test.js
-├── .env
-├── app.js
-├── server.js
-├── README.md
-└── package.json
-
 
 ---
 
@@ -72,27 +54,6 @@ books-api/
 - `PATCH /api/users/:id/role`: Cambiar rol *(admin)*
 - `DELETE /api/users/:id`: Eliminar usuario *(admin)*
 
----
-📄 Documentación Swagger
-Una vez el servidor esté corriendo, abre en tu navegador:
-
-http://localhost:5000/api-docs
-
-▶️ Instalación y uso
-Clona el repositorio:
-git clone https://github.com/minombresgabriel/ApiRestBooks.git
-cd ApiRestBooks
-
--Instala las dependencias:
-npm install
-
--Crea un archivo .env en la raíz y añade:
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/books_db
-JWT_SECRET=tu_clave_secreta_super_segura
-
-Ejecuta el servidor:
-npm run dev
 
 📌 Notas
 Este proyecto está pensado para usarse como base para APIs con autenticación.
